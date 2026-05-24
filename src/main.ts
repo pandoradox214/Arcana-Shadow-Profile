@@ -36,6 +36,8 @@ function enterMainSite(): void {
     
     revealSound.loop = true;
     
+
+    console.log(audio_path);
     revealSound.play().catch((error) => {
         // Keeps the console clean if a browser blocks audio processing flags
         console.warn("Audio playback engine blocked or interrupted:", error);
