@@ -29,7 +29,9 @@ if (laceContainer) {
 // 2. Define the State Change to the Main Website
 function enterMainSite(): void {
 
-    const revealSound = new Audio('/audio/ed.mp3');
+
+    const audio_path = `${import.meta.env.BASE_URL}audio/ed.mp3`;
+    const revealSound = new Audio(audio_path);
     revealSound.volume = 0.4; // Comfortably balanced audio layout boundary
     
     revealSound.loop = true;
